@@ -1,0 +1,27 @@
+body{
+margin left: 50px; 
+}
+h1{
+    color: blue;
+}
+h3{
+    color: blue;
+}
+.profile{
+    display: flex;
+}
+.ten{
+    margin: 10px 10px 10px 1px;
+}
+.ho{
+    margin: 10px 0px 10px 5px;
+}
+.email{
+    margin: 0px 0px 10px 0px;
+}
+.pass{
+    margin: 0px 0px 10px 0px;
+}
+.dateofbirth{
+    display: flex;
+}
