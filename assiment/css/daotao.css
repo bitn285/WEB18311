@@ -2,7 +2,6 @@ body{
     margin: 10px;
     padding: 5px;
     background-color: ghostwhite;
-    font-size: larger;
 }
 .nav{
     margin-top: -5px;
@@ -61,7 +60,6 @@ body{
     display: inline-block;
 }
 
-
 h1{
     text-align: center;
     color: brown;
@@ -79,23 +77,24 @@ footer{
     overflow: hidden;
     font-size: 20px;
 }
-.demo{
+.section1{
     display: flex;
     font-size: larger;
     font-style: italic;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    background-color: ghostwhite;
-    width: 100%;
-    height: 200px;
 }
-.boxleft{
-    float: left;
-    margin: auto;
-}
-.box5{
+.section2{
     display: flex;
-    margin-top: 50px;
-    justify-content: space-around;
-}
+    font-size: larger;
+    font-style: italic;
 
+}
+.section3{
+    display: flex;
+    font-size: larger;
+    font-style: italic;
+}
+.section4{
+    display: flex;
+    font-size: larger;
+    font-style: italic;
+}

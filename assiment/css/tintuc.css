@@ -1,8 +1,5 @@
-body{ 
-    margin: 10px;
-    padding: 5px;
-    background-color: ghostwhite;
-    font-size: larger;
+body{
+    background-color:ghostwhite;
 }
 .nav{
     margin-top: -5px;
@@ -60,17 +57,16 @@ body{
     margin: 2px 6px;
     display: inline-block;
 }
-
-
-h1{
+.tieu-de{
+    background:orangered;
+}
+.tieu-de>h1{
+    margin: 10px 0px 10px 0px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    color: brown;
+    position: relative;
 }
-h3{
-    color: orangered;
-    font-style: italic;
-}
-
 footer{
     text-align: center;
     background-color: rgb(242, 86, 30);
@@ -79,23 +75,21 @@ footer{
     overflow: hidden;
     font-size: 20px;
 }
-.demo{
+.first{
     display: flex;
-    font-size: larger;
-    font-style: italic;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    background-color: ghostwhite;
-    width: 100%;
-    height: 200px;
+    margin: 20px 10px 20px 10px;
+    
 }
-.boxleft{
-    float: left;
-    margin: auto;
-}
-.box5{
+.second{
     display: flex;
-    margin-top: 50px;
-    justify-content: space-around;
+    justify-content:space-between;
+    text-align: justify;
+    margin:20px 0px 20px 100px;
+    border-radius: 1px solid black;
+}    
+.third{
+    display: flex;
+    justify-content:space-between;
+    text-align: justify;
+    margin:20px -10px 20px 100px;
 }
-
