@@ -1,0 +1,328 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --tim: #8a2be2;
+    --red: #dc143c;
+    --blue: #0000ff;
+    --green: #32cd32;
+    --dark: #4b0082;
+    --navy: #000080;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    margin: auto 0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.member {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text-member {
+    margin: auto 0;
+    padding: 30px;
+}
+
+.text-member .text-member-one {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.text-member .text-member-two {
+    font-size: 15px;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sub-member {
+    display: flex;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.sub-member .sub-member-two .add,
+.sub-member .sub-member-one .download {
+    margin: 5px;
+    padding-left: 5px;
+}
+
+.sub-member .sub-member-one {
+    display: flex;
+    border: 1px solid #000;
+    margin: auto 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px 15px;
+}
+
+.sub-member .sub-member-two {
+    display: flex;
+    color: #fff;
+    background-color: #000;
+    margin: auto 0;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.sub-member .sub-member-one:hover,
+.sub-member .sub-member-two:hover {
+    background-color: var(--red);
+    color: #000;
+}
+
+.nav {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    line-height: 5px;
+    padding: 15px 30px;
+    border-top: 1px solid #7e7e7e;
+}
+
+.nav .image {
+    width: 30%;
+}
+
+.nav input {
+    margin-right: 10px;
+}
+
+.nav .name {
+    margin: 12px 0 0 -12px;
+}
+
+.statu {
+    position: relative;
+    display: flex;
+
+    font-weight: bold;
+    width: 6%;
+    margin: auto 0;
+
+    cursor: pointer;
+}
+
+.statu .sta {
+    margin: 10px 0;
+}
+
+.header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    line-height: 5px;
+    padding: 15px 30px;
+}
+
+.header:nth-child(2n) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header:nth-child(2n + 1) {
+    background-color: #fff;
+}
+
+.fullname {
+    display: flex;
+    flex-direction: row;
+}
+
+.fullname .checkbox {
+    margin-right: 10px;
+    padding: 10px 0;
+
+    cursor: pointer;
+}
+
+.image {
+    width: 30%;
+}
+
+.image .name {
+    display: inline-block;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.image .name span {
+    font-weight: bold;
+}
+
+.image img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.status {
+    position: relative;
+    display: flex;
+
+    font-weight: bold;
+
+    border: 1px solid green;
+    border-radius: 20px;
+
+    margin: auto 0;
+    padding: 10px 5px 12px 25px;
+
+    color: green;
+    background-color: rgb(194, 222, 194);
+
+    cursor: pointer;
+}
+
+.status::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+left: 10%;
+
+    border-radius: 50%;
+
+    background-color: green;
+}
+
+.static {
+    position: relative;
+    display: flex;
+
+    font-weight: bold;
+
+    border: 1px solid #000;
+    border-radius: 20px;
+
+    margin: auto 0;
+    padding: 10px 5px 12px 25px;
+
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+}
+
+.static::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 10%;
+
+    border-radius: 50%;
+
+    background-color: #000;
+}
+
+.teams {
+    display: flex;
+    width: 30%;
+
+    margin: auto 0;
+    padding: 10px;
+
+    cursor: pointer;
+}
+
+.teams .design {
+    border: 1px solid #c09be3;
+    border-radius: 20px;
+    padding: 10px;
+
+    color: var(--tim);
+    background-color: #c09be3;
+}
+
+.teams .product:nth-child(2) {
+    margin-left: 10px;
+}
+
+.teams .operations:nth-child(2) {
+    margin-left: 10px;
+}
+
+.teams .product {
+    border-radius: 20px;
+    border: 1px solid #adadee;
+    padding: 10px;
+
+    color: var(--blue);
+    background-color: #adadee;
+}
+
+.teams .software {
+    border-radius: 20px;
+    border: 1px solid #cef8ce;
+    padding: 10px;
+    margin-left: 10px;
+
+    color: var(--green);
+    background-color: #cef8ce;
+}
+
+.teams .operations {
+    border-radius: 20px;
+    border: 1px solid #e9a4b2;
+    padding: 10px;
+
+    color: var(--red);
+    background-color: #e9a4b2;
+}
+
+.teams .finance {
+    border-radius: 20px;
+    border: 1px solid #cfa1ef;
+    padding: 10px;
+    margin-left: 10px;
+
+    color: var(--dark);
+    background-color: #cfa1ef;
+}
+
+.teams .customer,
+.teams .marketing {
+    border-radius: 20px;
+    border: 1px solid #9c9cec;
+    padding: 10px;
+
+    color: var(--navy);
+    background-color: #9c9cec;
+}
+
+.teams .marketing {
+    margin-left: 10px;
+}
+
+.Email {
+    margin: auto 0;
+    width: 15%;
+}
+
+.icons {
+    
+    
+    margin: auto 0;
+    width: 5%;
+}
